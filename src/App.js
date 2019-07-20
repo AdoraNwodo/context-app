@@ -1,12 +1,15 @@
 import React from 'react';
 import Header from './components/Header';
 import SeriesList from './components/SeriesList';
+import ThemeContextProvider from './contexts/ThemeContext';
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <SeriesList />
+      <ThemeContextProvider>
+        <Header />
+        <SeriesList />
+      </ThemeContextProvider>
     </div>
   )
 }

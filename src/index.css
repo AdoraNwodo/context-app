@@ -10,6 +10,15 @@ body {
 .header{
   text-align: center;
 }
+.header h1{
+  margin: 0px;
+  padding: 20px;
+}
+.series-list ul{
+  margin: 0px;
+  padding: 20px;
+  min-height: calc(100vh - 118px);
+}
 .series-list ul li{
   list-style-type: none;
   text-align: center;
