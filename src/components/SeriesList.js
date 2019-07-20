@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class SeriesList extends Component {
     render() {
         return (
-            <div>
+            <div className="series-list">
                 <ul>
                     <li>How I met you mother</li>
                     <li>Game of Thrones</li>
