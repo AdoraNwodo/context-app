@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext';
+import ThemeToggle from './ThemeToggle';
 
 export default class SeriesList extends Component {
     static contextType = ThemeContext
@@ -15,6 +16,7 @@ export default class SeriesList extends Component {
                     <li>Power</li>
                     <li>Hit the floor</li>
                 </ul>
+                <ThemeToggle />
             </div>
         )
     }
