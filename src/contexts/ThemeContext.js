@@ -9,7 +9,7 @@ export default class ThemeContextProvider extends Component {
         darkProps: { background: '#000000', text: '#ffffff', ui: '#c71585', lines: '#ffffff'}
     }
     toggleTheme = () => {
-        this.setState({ isLight: !this.state.isLight})
+        this.setState({ isLight: !this.state.isLight })
     }
     render() {
         return (
