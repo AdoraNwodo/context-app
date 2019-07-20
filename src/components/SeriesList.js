@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
+import { ThemeContext } from '../contexts/ThemeContext';
 
 export default class SeriesList extends Component {
+    static contextType = ThemeContext
     render() {
+        const { isLight, lightProps, darkProps } = this.context
+        const theme = isLight ? lightProps : darkProps
         return (
-            <div className="series-list">
+            <div className="series-list" style={{background: theme.background, color: theme.text}}>
                 <ul>
                     <li>How I met you mother</li>
                     <li>Game of Thrones</li>
